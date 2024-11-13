@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
 
-export default function TabTwoScreen() {
+export default function PantallaInicio() {
   const router = useRouter();
 
   const testsData = {
@@ -24,7 +24,7 @@ export default function TabTwoScreen() {
     Animated.timing(suspendidos, { toValue: testsData.suspendidos, duration: 1000, useNativeDriver: false }).start();
 
     const aprobadosPorcentaje = (testsData.aprobados / testsData.hechos) * 100;
-    if (aprobadosPorcentaje > 90) setProbabilidad("😊 Muy alta, ¡completamente preparado!");
+    if (aprobadosPorcentaje > 90) setProbabilidad("⭐ Muy alta, ¡completamente preparado!");
     else if (aprobadosPorcentaje > 80) setProbabilidad("👍 Alta, bien preparado");
     else if (aprobadosPorcentaje > 70) setProbabilidad("😕 Intermedia, preparación justa");
     else if (aprobadosPorcentaje > 50) setProbabilidad("⚠️ Baja, estudia más");

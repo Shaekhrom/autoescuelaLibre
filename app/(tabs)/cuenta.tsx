@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-export default function SettingsScreen() {
+export default function PantallaAjustes() {
   return (
     <ScrollView style={styles.container}>
       {/* Header */}

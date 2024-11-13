@@ -1,7 +1,7 @@
 import { Image, Platform, View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-export default function TabTwoScreen() {
+export default function PantallaTests() {
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
