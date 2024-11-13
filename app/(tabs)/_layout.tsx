@@ -52,9 +52,9 @@ export default function TabLayout() {
       <Tabs.Screen
         name="cuenta"
         options={{
-          title: 'Cuenta',
+          title: 'Opciones',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'person' : 'person-outline'} color={color} />
+            <TabBarIcon name={focused ? 'settings' : 'settings-outline'} color={color} />
           ),
         }}
       />
